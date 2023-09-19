@@ -1,0 +1,45 @@
+CREATE TABLE manager (
+  id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  username VARCHAR(50) NOT NULL,
+  password VARCHAR(50) NOT NULL
+);
+
+CREATE TABLE customer (
+  id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  username VARCHAR(50) NOT NULL,
+  password VARCHAR(50) NOT NULL
+);
+
+CREATE TABLE employee (
+  id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  first_name VARCHAR(50) NOT NULL,
+  last_name VARCHAR(50) NOT NULL,
+  login_token VARCHAR(50) NOT NULL,
+  password VARCHAR(50) NOT NULL,
+  salary INT NOT NULL
+);
+
+CREATE TABLE product (
+  id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  name VARCHAR(50) NOT NULL,
+  image_url VARCHAR(200) NOT NULL,
+  price DECIMAL(10,2) NOT NULL
+);
+
+CREATE TABLE customer_signup (
+  id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  first_name VARCHAR(50) NOT NULL,
+  last_name VARCHAR(50) NOT NULL,
+  username VARCHAR(50) NOT NULL,
+  date_of_birth DATE NOT NULL,
+  password VARCHAR(50) NOT NULL
+);
+
+CREATE TABLE cart (
+  id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  customer_id INT NOT NULL,
+  product_id INT NOT NULL,
+  quantity INT NOT NULL,
+  FOREIGN KEY (customer_id) REFERENCES customer(id),
+  FOREIGN KEY (product_id) REFERENCES product(id)
+);

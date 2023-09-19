@@ -1,0 +1,40 @@
+
+Readme file to install this website
+Requirements
+
+    A web server (e.g., Apache or Nginx) XAMPP for this particular website
+    PHP version 5.6 or later
+    MySQL database
+    A modern web browser (e.g., Google Chrome, Mozilla Firefox)
+
+Installation Steps
+
+    Create a new database in MySQL and name it 'WebE'.
+    Import the SQL file provided in the source code folder to the 'WebE' database to create the necessary tables.
+    Move the downloaded source code files to the root directory of your web server.
+     update the database connection settings with your MySQL server credentials.
+    Open a web browser and navigate to the root directory of your web server to view the website.
+
+Usage
+
+    The website displays a list of products fetched from the 'product' table in the database.
+    Users can browse through the products and add them to their cart by clicking on the 'Add to Cart' button.
+    Users can access the 'Cart' page by clicking on the 'Cart' link in the navigation bar to view their added products.
+    Users can also access the 'Customer', 'Manager', and 'Employee' pages by clicking on the respective links in the navigation bar.
+    The website also displays the user's current location if the browser supports the Geolocation API.
+
+Credits
+
+    This website was created by Group[2 BSE] 
+    Ntwari Regan 2021/BSE/134/PS 
+Mwesigye Jordan Alvin 2021/BSE/088/PS 
+Nuwagira Yoweri 2021/BSE/105/PS 
+Ampe Sheenah 2021/BSE/019/PS 
+Assimwe Edrine 2021/BSE/027/PS 
+Atusasire Bonitor 2021/BSE/030/PS 
+Baguma Muhsin Karim 2021/BSE/033/PS 
+Okema Elvis 2021/BSE/169/PS 
+Bwesigye Treasure 2021/BSE/145/PS 
+Mugisha John Wycliffe 2021/BSE/076/PS.
+    The website is free to use
+

@@ -1,0 +1,114 @@
+/* Reset some default styles to ensure consistency */
+body, html {
+    margin: 0;
+    padding: 0;
+}
+header {
+  font-family: sans-serif;
+  background: linear-gradient(to right, #4D3C6B 5%, #18AC90 100%); /* Green to Blue */
+  color: #fff;
+  padding: 10px;
+}
+
+.Head h1{
+    font-family: sans-serif;
+    color: #18AC90;
+    display: flex;
+    font-size: 30px;
+    padding-left: 100px;
+}
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav li {
+  margin: 0 10px;
+}
+
+nav p {
+    color: black;
+    font-size: 5px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+/* Center the card in the middle of the page */
+.card {
+    width: 800px; /* Adjust the width according to your preference */
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    position: relative;
+}
+
+/* Style the product image */
+.card img {
+    max-width: 150px; /* Adjust the width of the image to your desired size */
+    height: auto;
+    border-radius: 5px; /* Optional: Add rounded corners to the image */
+    position:absolute;
+    left:10px;
+}
+
+/* Style the content on the right */
+.card .content { /* Take up the remaining space in the flex container */
+    padding-left: 120px; /* Adjust the padding to create spacing between the text and image */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Style the product name */
+.card h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-family: sans-serif;
+    color: #4D3C6B;
+}
+
+/* Style the product price */
+.card p {
+    font-family: sans-serif;
+    font-size: 13px;
+    padding: 1px;
+    color: darkgrey;
+}
+
+.btn{
+    padding: 13px 25px;
+    position: absolute;
+    top:50px;
+    right: 50px;
+    background-color: #18AC90;
+    border: none;
+    color: white;
+    font-family: sans-serif;
+    border-radius: 10px;
+    font-size: 14px;
+    cursor: pointer;
+}
+.btns{
+    padding: 10px 15px;
+    position: absolute;
+    top:50px;
+    right: 200px; 
+    color: #4D3C6B;
+    background-color: white;
+    border: solid #4D3C6B;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.btn button:hover{
+    background-color:#4D3C6B;
+}
+.btns button:hover{
+    background-color:#4D3C6B;
+}
